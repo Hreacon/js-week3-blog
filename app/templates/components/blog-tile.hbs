@@ -4,5 +4,6 @@
   <p>{{blog.body}}</p>
   {{#if admin}}
     <button {{action 'deleteMe' blog}}>Delete</button>
+    <button {{action 'updateMe' blog}}>Update</button>
   {{/if}}
 </div>
