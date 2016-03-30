@@ -1,10 +1,9 @@
 <div class="header">
   <p>
-    Logo
+    {{#link-to 'index'}}Logo{{/link-to}}
   </p>
   <ul>
-    <li>Posts</li>
-    <li>Admin</li>
+    <li>{{#link-to 'admin'}}Admin{{/link-to}}</li>
     <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
     <li>{{#link-to 'about'}}About Us{{/link-to}}</li>
   </ul>
