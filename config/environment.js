@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'blog',
     environment: environment,
+    firebase: "https://blog-5.firebaseio.com/",
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
