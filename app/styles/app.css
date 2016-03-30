@@ -26,3 +26,47 @@
   border-radius:20px;
   box-shadow:1px 3px 10px gray;
 }
+
+form {
+    width: 70%;
+    margin:2em auto;
+}
+
+input, textarea {
+  width: 69%;
+}
+
+label {
+  width: 29%;
+}
+
+label, input, textarea {
+  display: inline-block;
+  margin:1% 0;
+  border-radius: 4px;
+}
+
+[type=submit] {
+  width: 100%;
+}
+
+.button, button {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  border: solid 2px;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 5px 5px 3px lightgrey;
+  background: white;
+  margin:5px;
+  font-size:1em;
+}
+
+.unstyled {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+
+<form>
+  <label for="title">Title</label>
+  {{input name="title" value=title placeholder="Post Title"}}
+  <label for="body">Body</label>
+  {{textarea rows="10" name="body" value=body placeholder="Body"}}
+  <button {{action 'saveNewBlog'}}  type="submit">Submit</button>
+</form>

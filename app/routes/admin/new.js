@@ -2,8 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   actions: {
-    saveeNewBlog(params) {
-      console.log('admin saveNewBlog');
+    saveNewBlog(params) {
+      console.log('new saveNewBlog');
       this.store.createRecord("blog", params).save();
     }
   }
