@@ -1,5 +1,8 @@
-<div class="blog-tile">
+<div>
   <h3>{{blog.title}}</h3>
   <h4>{{blog.date}}</h4>
   <p>{{blog.body}}</p>
+  {{#if admin}}
+    <button {{action 'deleteMe' blog}}>Delete</button>
+  {{/if}}
 </div>

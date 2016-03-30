@@ -1,10 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  model() {
+    return this.store.findAll('blog');
+  },
   actions: {
-    saveeNewBlog(params) {
-      console.log('admin saveNewBlog');
-      this.store.createRecord("blog", params).save();
+    deleteMe(blog) {
+      if(confirm("Are you sure you wish to delete this entry?")) {
+        blog.destroyRecord();
+        this.transitionTo("admin");
+      }
     }
   }
 });
