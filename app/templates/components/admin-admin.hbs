@@ -1,0 +1,7 @@
+<ul class="unstyled">
+  <li>{{#link-to  'admin.new' class="button"}}Create New Blog{{/link-to}}</li>
+</ul>
+
+{{blog-list model=model deleteMe="deleteMe" updateMe="updateMe" admin="admin"}}
+
+{{update-blog blog=selectedBlog updateBlog="updateBlog"}}
