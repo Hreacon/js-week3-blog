@@ -8,7 +8,8 @@ Allow users an option to update existing posts.
 
 # Doing
 
-Allow users to navigate to individual posts and add new comments.
+Allow users to navigate to individual posts
+allow users to add new comments to posts.
 Give users the opportunity to update the content of their comments.
 Provide the option to delete comments.
 Fix Date Display
