@@ -6,6 +6,7 @@ export default Ember.Component.extend({
       this.sendAction("deleteMe", blog);
     },
     updateMe(blog) {
+      console.log("list");
       this.sendAction("updateMe", blog);
     }
   }

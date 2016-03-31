@@ -1,7 +1,9 @@
-<form>
-  <label for="title">Title</label>
-  {{input name="title" value=blog.title placeholder="Post Title"}}
-  <label for="body">Body</label>
-  {{textarea rows="10" name="body" value=blog.body placeholder="Body"}}
-  <button {{action 'updateBlog' blog}}  type="submit">Submit</button>
-</form>
+{{#if blog}}
+  <form>
+    <label for="title">Title</label>
+    {{input name="title" value=blog.title placeholder="Post Title"}}
+    <label for="body">Body</label>
+    {{textarea rows="10" name="body" value=blog.body placeholder="Body"}}
+    <button {{action 'updateBlog' blog}}  type="submit">Submit</button>
+  </form>
+{{/if}}
