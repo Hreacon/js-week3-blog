@@ -10,8 +10,8 @@ Router.map(function() {
   this.route('contact');
   this.route('admin', function() {
     this.route('new');
-    this.route('thingy');
   });
+  this.route('blog-detail', {path: "/blog/:blog_id"});
 });
 
 export default Router;

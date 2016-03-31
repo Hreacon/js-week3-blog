@@ -1,5 +1,5 @@
 <div>
-  <h3>{{blog.title}}</h3>
+  <h3>{{#link-to 'blog-detail' blog.id}}{{blog.title}}{{/link-to}}</h3>
   <h4>{{blog.date}}</h4>
   <p>{{blog.body}}</p>
   {{#if admin}}

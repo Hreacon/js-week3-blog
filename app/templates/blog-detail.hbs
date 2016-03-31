@@ -1,0 +1,5 @@
+<h1>{{model.title}}</h1>
+<h3>{{model.body}}</h3>
+
+{{comment-list model=model.comments}}
+{{new-comment saveComment="saveComment" blog=model}}
